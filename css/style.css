@@ -689,3 +689,16 @@ textarea.form-control {
         padding: 25px;
     }
 }
+/* Жёсткое исправление (если не помогло первое) */
+@media (max-width: 480px) {
+    .header {
+        min-height: 90vh !important;
+        padding-top: 60px !important; /* Учитываем высоту навигации */
+    }
+    
+    .header-content {
+        transform: none !important;
+        top: auto !important;
+    }
+}
+
