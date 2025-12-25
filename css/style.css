@@ -658,4 +658,34 @@ textarea.form-control {
         margin-right: 30px;
         margin-bottom: 0;
     }
+
+}
+/* Исправление для мобильной версии шапки */
+@media (max-width: 767px) {
+    .header {
+        min-height: 100vh; /* Оставляем на всю высоту */
+        height: auto; /* Меняем фиксированную высоту на автоматическую */
+        padding: 20px 0; /* Добавляем отступы сверху и снизу */
+    }
+    
+    .header-content {
+        padding: 40px 20px; /* Уменьшаем внутренние отступы */
+        margin: 0; /* Убираем внешние отступы */
+    }
+    
+    .header-content h1 {
+        font-size: 1.8rem; /* Уменьшаем размер заголовка */
+        margin-bottom: 15px;
+    }
+    
+    .header-content p {
+        font-size: 1rem; /* Уменьшаем размер текста */
+        margin-bottom: 25px;
+    }
+    
+    /* Дополнительно: уменьшаем высоту слайдера на мобилках */
+    .slide {
+        height: 350px;
+        padding: 25px;
+    }
 }
