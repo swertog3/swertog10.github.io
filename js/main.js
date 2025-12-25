@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const source = document.createElement('source');
         source.src = siteConfig.videoUrl;
-        source.type = 'video.mp4';
+        source.type = 'video/mp4';
         
         video.appendChild(source);
         video.innerHTML += 'Ваш браузер не поддерживает видео.';
